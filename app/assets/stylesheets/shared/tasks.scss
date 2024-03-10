@@ -1,0 +1,43 @@
+.task-link {
+  display: inline-flex;
+  align-items: center;  
+  margin-left: auto;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.task-list {
+  margin: 0;
+  padding: 0;
+
+  .task-list-item {
+    display: flex;
+    align-items: center;
+    padding-block: .75rem;
+  
+    &:last-child {
+      padding-bottom: 0;
+    }
+  
+    &:not(:last-child) {
+      border-bottom: 1px solid $borderColor;
+    }
+  
+    span:last-child {
+      margin-left: auto;
+    }
+  
+    .delimiter {
+      padding-inline: 0.5rem;
+    }
+  
+    .primary-data {
+      font-weight: bold;
+    }
+  
+    .secondary-data,
+    .task-icon {
+      color: $mutedText;
+    }
+  }
+}

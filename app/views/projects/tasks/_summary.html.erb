@@ -1,4 +1,45 @@
 <section class="summary-panel">
-  <h4>Edit me in app/views/projects/tasks/_summary.html.erb</h4>
-  <%= link_to 'link to my tasks view', project_tasks_path(current_project) %>
+  <h4 class="header-underline">
+    My tasks
+    <%= link_to project_tasks_path(current_project), class: 'task-link' do %>
+      <i class="fa-regular fa-user fa-fw"></i>All my tasks
+    <% end %>
+  </h4>
+  <ul class="task-list">
+    <li class="task-list-item">
+      <i class="fa-regular fa-circle-check fa-fw task-icon"></i>
+      <span class="primary-data">Task name</span>
+      <span class="delimiter">/</span>
+      <span class="secondary-data">Methodology</span>
+      <span class="secondary-data"><i class="fa-regular fa-bell fa-fw"></i>Tomorrow</span>
+    </li>
+    <li class="task-list-item">
+      <i class="fa-regular fa-circle-check fa-fw task-icon"></i>
+      <span class="primary-data">Task name</span>
+      <span class="delimiter">/</span>
+      <span class="secondary-data">Methodology</span>
+      <span class="secondary-data"><i class="fa-regular fa-bell fa-fw"></i>Wednesday</span>
+    </li>
+    <li class="task-list-item">
+      <i class="fa-regular fa-circle-check fa-fw task-icon"></i>
+      <span class="primary-data">Task name</span>
+      <span class="delimiter">/</span>
+      <span class="secondary-data">Methodology</span>
+      <span class="secondary-data"><i class="fa-regular fa-bell fa-fw"></i>20 Mar</span>
+    </li>
+    <li class="task-list-item">
+      <i class="fa-regular fa-circle-check fa-fw task-icon"></i>
+      <span class="primary-data">Task name</span>
+      <span class="delimiter">/</span>
+      <span class="secondary-data">Methodology</span>
+      <span class="secondary-data"></span>
+    </li>
+    <li class="task-list-item">
+      <i class="fa-regular fa-circle-check fa-fw task-icon"></i>
+      <span class="primary-data">Task name</span>
+      <span class="delimiter">/</span>
+      <span class="secondary-data">Methodology</span>
+      <span class="secondary-data"></span>
+    </li>
+  </ul>
 </section>
