@@ -1,5 +1,22 @@
 <% content_for :title, 'My Tasks' %>
 
-<div class="content-container mt-3">
-  <h1>Edit me in app/views/tasks/index.html.erb</h1>
+<div class="content-container mt-3 tasks-wrapper">
+  <h4 class="pb-3">
+    <i class="fa-regular fa-user"></i>
+    Assigned to me
+  </h4>
+  <section class="tasks-section">
+    <div>
+      <h5>
+        <i class="fa-solid fa-caret-down" data-tasks-accordion-control></i>
+        <span class="task-primary-data">Methodology x</span>
+        <span>/</span>
+        <span class="task-secondary-data"> 3 tasks</span>
+      </h5>
+      <div id="methologyx" class="">
+        <table>tables to go here</table>
+        <%= render "table" %>
+      </div>
+    </div>
+  </section>
 </div>

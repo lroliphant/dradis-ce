@@ -1,6 +1,19 @@
+.task-primary-data {
+  font-weight: bold;
+}
+
+.task-secondary-data,
+.task-icon {
+  color: $mutedText;
+}
+
+.task-delimiter {
+  padding-inline: 0.5rem;
+}
+
 .task-link {
   display: inline-flex;
-  align-items: center;  
+  align-items: center;
   margin-left: auto;
   text-transform: capitalize;
   font-size: 0.9rem;
@@ -14,30 +27,28 @@
     display: flex;
     align-items: center;
     padding-block: .75rem;
-  
+
     &:last-child {
       padding-bottom: 0;
     }
-  
+
     &:not(:last-child) {
       border-bottom: 1px solid $borderColor;
     }
-  
+
     span:last-child {
       margin-left: auto;
     }
-  
-    .delimiter {
-      padding-inline: 0.5rem;
-    }
-  
-    .primary-data {
-      font-weight: bold;
-    }
-  
-    .secondary-data,
-    .task-icon {
-      color: $mutedText;
-    }
+  }
+}
+
+.tasks-section {
+  .tasks-accordion-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0;
+    color: $defaultText;
+    transition: all 0.5s ease-in-out;
   }
 }
