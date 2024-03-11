@@ -1,5 +1,5 @@
 .task-primary-data {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .task-secondary-data,
@@ -8,6 +8,7 @@
 }
 
 .task-delimiter {
+  color: $mutedText;
   padding-inline: 0.5rem;
 }
 
@@ -39,16 +40,5 @@
     span:last-child {
       margin-left: auto;
     }
-  }
-}
-
-.tasks-section {
-  .tasks-accordion-header {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    margin-bottom: 0;
-    color: $defaultText;
-    transition: all 0.5s ease-in-out;
   }
 }
