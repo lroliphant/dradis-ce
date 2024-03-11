@@ -1,0 +1,28 @@
+<% content_for :title, 'My Tasks' %>
+
+<div class="content-container mt-3 tasks-wrapper">
+  <h4 class="pb-4">
+    <i class="fa-regular fa-user"></i>
+    Assigned to me
+  </h4>
+  <section class="tasks-section">
+    <div class="mb-5">
+      <h5 class="py-2">
+        <span class="task-primary-data">Methodology x</span>
+      </h5>
+      <div id="methologyx">
+        <%= render "table-controls" %>
+        <%= render "table" %>
+      </div>
+    </div>
+    <div>
+      <h5 class="py-2">
+        <span class="task-primary-data">Methodology y</span>
+      </h5>
+      <div id="methologyx">
+        <%= render "table-controls" %>
+        <%= render "table" %>
+      </div>
+    </div>
+  </section>
+</div>

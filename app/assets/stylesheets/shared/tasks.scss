@@ -1,0 +1,72 @@
+.task-primary-data {
+  font-weight: 600;
+}
+
+.task-secondary-data,
+.task-icon {
+  color: $mutedText;
+}
+
+.task-delimiter {
+  color: $mutedText;
+  padding-inline: 0.5rem;
+}
+
+.task-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.task-list {
+  margin: 0;
+  padding: 0;
+
+  .task-list-item {
+    display: flex;
+    align-items: center;
+    padding-block: .75rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $borderColor;
+    }
+
+    span:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.task-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: .8rem;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: .2rem .6rem;
+}
+
+.task-badge--neutral {
+  // hex code pulled from bg on donut background on methodology progress widget
+  background-color: #e7e7e7;
+}
+
+.task-badge--success {
+  background-color: $lightGreen;
+}
+
+.task-filters {
+  display: flex;
+  gap: 1rem;
+  flex-basis: 48rem;
+}
+
+.task-search {
+  margin-left: auto;
+}
