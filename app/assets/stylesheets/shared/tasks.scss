@@ -42,3 +42,31 @@
     }
   }
 }
+
+.task-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: .8rem;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: .2rem .6rem;
+}
+
+.task-badge--neutral {
+  // hex code pulled from bg on donut background on methodology progress widget
+  background-color: #e7e7e7;
+}
+
+.task-badge--success {
+  background-color: $lightGreen;
+}
+
+.task-filters {
+  display: flex;
+  gap: 1rem;
+  flex-basis: 48rem;
+}
+
+.task-search {
+  margin-left: auto;
+}

@@ -7,14 +7,35 @@
   </h4>
   <section class="tasks-section">
     <div>
-      <h5>
-        <i class="fa-solid fa-caret-down" data-tasks-accordion-control></i>
+      <h5 class="pb-2">
         <span class="task-primary-data">Methodology x</span>
-        <span>/</span>
-        <span class="task-secondary-data"> 3 tasks</span>
       </h5>
-      <div id="methologyx" class="">
-        <table>tables to go here</table>
+      <div id="methologyx">
+        <% #Note: search and filter functioning not working - these are here to illustrate the position of these - the actual search, filter and sorting (on columns for name, due date and status) still need to be added %>
+        <div class="d-flex pb-2">
+          <div class="task-filters">
+            <div class="input-group mb-2">
+              <input type="text" class="form-control" aria-label="Date input preset or range" placeholder="Anytime">
+              <div class="input-group-text">
+                <i class="fa-regular fa-calendar"></i>
+              </div>
+            </div>
+            <div class="input-group mb-2">
+              <input type="text" class="form-control" aria-label="Status" placeholder="Pending, Done">
+              <div class="input-group-text">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="task-search">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Search for task" placeholder="Search by name">
+              <div class="input-group-text">
+                <i class="fa-solid fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
         <%= render "table" %>
       </div>
     </div>
